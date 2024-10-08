@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Elegant Ensemble</title>
+    <!-- Favicon -->
+    <link rel="icon" th:href="@{/images/TheElegantEnsemble Logo.png}" type="TheElegantEnsemble/png">
+    <!-- External CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-flex">
+                <div class="logo-title">
+                    <img th:src="@{/images/ TheElegantEnsemble Logo.png}" alt="TheElegantEnsemble Logo" class="logo">
+                    <h1><b>The Elegant Ensemble</b></h1>
+                </div>
+                <div class="search-login">
+                    <input type="text" id="search" name="search" placeholder="Search for products...">
+                    <button type="button" class="btn btn-primary">Search</button>
+                    <div id="search-suggestions" class="suggestions-dropdown"></div>&nbsp;
+                    <nav>
+                        <div class="nav navbar-nav navbar-right">
+                            <a th:href="@{/login}"><span class="glyphicon glyphicon-user"></span></a> &nbsp;
+                            <a th:href="@{/carts}"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                <span class="badge">0</span></a>&nbsp;
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a th:href="@{/home}">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Collection <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a th:href="@{/ensemblesforboys}">Ensembles for Boys</a></li>
+                                <li><a th:href="@{/ensemblesforgirls}">Ensembles for Girls</a></li>
+                                <li><a th:href="@{/latestaddition}">Latest Addition</a></li>
+                                <li><a th:href="@{/popularchoice}">Popular Choice</a></li>
+                                <li><a th:href="@{/jewelry}">Jewelry</a></li>
+                            </ul>
+                        </li>
+                        <li><a th:href="@{/faqs}">FAQs</a></li>
+                        <li><a th:href="@{/contact}">Contact-Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="page">
+        <section id="home">
+            <h2><b>Home</b></h2>
+            <p style="font-size: 18px;">Welcome to our virtual boutique.
+                Explore our handpicked collection and indulge in a delightful shopping experience!</p>
+                </div>
+              </div>
+            </section>
+
+        <hr>
+
+        <section id="products">
+            <h2><b>Products</b></h2>
+
+            <div class="products-container">
+                <!-- Product 1 -->
+            <div class="product">
+                <a href="product1.html">
+                    <img th:src="@{/images/saree.jpg}" 
+                    alt="Saree" class="img-rounded">
+                </a>
+                <h3>Hand Embedded Wedding Saree Set</h3>
+                <!-- Rating Stars -->
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="5 stars">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="4 stars">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="3 stars">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="2 stars">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="1 star">1 star</label>
+                  </div>
+        
+                <p>Rs. 5,000</p>
+                <a href="product1.html">
+                    <button type="button" class="btn btn-default">View Details</button>
+                </a>
+                <button type="button" class="btn btn-default">Add to Cart</button>
+            </div>
+
+                <!-- Product 2 -->
+            <div class="product">
+                <a href="product2.html">
+                    <img th:src="@{/images/image1.jpg}" 
+                    class="img-rounded" alt="image1">
+                </a>
+                <h3>ElegantEnsembles Men's Bridal Wear</h3>
+                <!-- Rating Stars -->
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="5 stars">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="4 stars">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="3 stars">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="2 stars">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="1 star">1 star</label>
+                  </div>
+                <p>Rs. 8,000</p>
+                <a href="product2.html">
+                    <button type="button" class="btn btn-default">View Details</button>
+                </a>
+                <button type="button" class="btn btn-default">Add to Cart</button>
+            </div>
+
+                <!-- Product 3 -->
+            <div class="product">
+                <a href="product3.html">
+                    <img th:src="@{/images/lehenga.jpg}" 
+                    alt="Lehenga" class="img-rounded">
+                </a>
+                <h3>Hand Embroidered Red Lehenga Set for Wedding</h3>
+                <!-- Rating Stars -->
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="5 stars">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="4 stars">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="3 stars">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="2 stars">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="1 star">1 star</label>
+                  </div>
+                <p>Rs. 6,000</p>
+                <a href="product3.html">
+                    <button type="button" class="btn btn-default">View Details</button>
+                </a>
+                <button type="button" class="btn btn-default">Add to Cart</button>
+            </div>
+
+                <!-- Product 4 -->
+                <div class="product">
+                    <a href="product4.html">
+                        <img th:src="@{/images/image2.jpg}" 
+                        alt="image2" class="img-rounded">
+                    </a>
+                    <h3>Wedding ensemble for men</h3>
+                    <!-- Rating Stars -->
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="5 stars">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="4 stars">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="3 stars">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="2 stars">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="1 star">1 star</label>
+                  </div>
+                    <p>Rs. 10,000</p>
+                    <a href="product4.html">
+                        <button type="button" class="btn btn-default">View Details</button>
+                    </a>
+                    <button type="button" class="btn btn-default">Add to Cart</button>
+            </div>
+
+           <div class="button-container">
+            <a href="seemore.html"><button type="button" class="btn btn-primary">
+              See More</button></a>
+</div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Elegant Ensemble. All rights reserved.</p>
+    </footer>
+
+    <div id="ad-popup">
+        <div class="ad-content">
+            <h2>Exclusive Deal!</h2>
+            <p>Receive a 20% discount on your first purchase. Don't miss out order now!</p>
+            <img th:src="@{/images/ads.png}" alt="Special Offer" class="img-rounded">
+
+            <br><br>
+            <button id="close-ad-btn" type="button" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <script th:src="@{/js/ads.js}"></script>
+	<script th:src="@{/js/search.js}"></script>
+	
+</body>
+</html>

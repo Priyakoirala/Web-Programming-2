@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.example.webprogramming2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebProgramming2ApplicationTests {
-
+class TheElegantEnsembleApplicationTests {
+	
 	@Test
 	void contextLoads() {
-	}
+		}
 
 }
